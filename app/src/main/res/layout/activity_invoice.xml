@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".InvoiceActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Invoice"
+        android:id="@+id/invoice"
+
+        android:textSize="35dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_below="@+id/invoice"
+
+        android:hint="Product Name"
+
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/type"
+        android:layout_below="@+id/name"
+
+        android:hint="Product Type"
+
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="200dp"
+        android:padding="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/quantity"
+        android:layout_below="@+id/name"
+
+        android:hint="Quantity"
+
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="30dp"
+        android:padding="20dp"
+        android:inputType="number"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/price"
+        android:layout_below="@+id/type"
+
+        android:hint="Price"
+
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="200dp"
+        android:padding="20dp"
+        android:inputType="number"/>
+    <Spinner
+        android:id="@+id/intype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantity"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginRight="30dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:backgroundTint="#FFFFFF"
+        android:dropDownWidth="wrap_content"
+        android:dropDownSelector="@android:drawable/btn_dropdown"
+        android:padding="20dp"
+        android:popupBackground="@android:drawable/btn_dropdown"
+        android:scrollbarThumbHorizontal="@android:drawable/btn_dropdown"
+        android:scrollbarThumbVertical="@android:drawable/btn_dropdown"
+        android:scrollbarTrackHorizontal="@android:drawable/btn_dropdown"
+        android:scrollbarTrackVertical="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/coname"
+        android:layout_below="@+id/price"
+
+        android:hint="Customer Name"
+
+
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/prodes"
+        android:layout_below="@+id/coname"
+
+        android:hint="Description Of The Product"
+
+
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="30dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/codes"
+        android:layout_below="@+id/prodes"
+
+        android:hint="Description Of The Customer"
+
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        android:padding="30dp"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/savebtn"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/codes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+
+        android:text="Save"
+        android:textSize="25sp"
+        android:onClick="savebtn"/>
+    <Button
+        android:id="@+id/backbttn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="."
+
+
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/baseline_arrow_back_24"/>
+
+</RelativeLayout>

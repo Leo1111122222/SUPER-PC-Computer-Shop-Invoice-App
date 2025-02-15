@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyApplication21" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+         <item name="colorPrimary">@color/cardview_shadow_end_color</item>
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+    <!--  DACK MODE -->
+
+<style name="DACKMODE">
+
+
+</style>
+    <style name="DACKtext">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="BUTTONDACK">
+        <item name="backgroundTint">#941B9F</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="DACKedi">
+        <item name="editTextColor">#FFFF</item>
+        <item name="android:textColorHint">#FFF</item>
+    </style>
+
+
+
+</resources>

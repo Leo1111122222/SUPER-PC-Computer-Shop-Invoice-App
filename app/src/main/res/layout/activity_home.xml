@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="120dp"
+        android:gravity="center"
+        android:text="Home"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:background="#00FFFFFF"
+        android:textStyle="bold" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/settingbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="Setting"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/baseline_settings_24"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/infobtn"
+        android:layout_width="290dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/home"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:text="View Information"
+        android:textSize="20sp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/enterbtn"
+        android:layout_width="290dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/infobtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:text="Entering Information"
+        android:textSize="20sp" />
+</RelativeLayout>
